@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamza Ould Damba Korka — Cinematographer · Video Editor · Colorist</title>
+<meta name="description" content="Portfolio of Hamza Ould Damba Korka, cinematographer, video editor and colorist based in Morocco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090A0D;--s1:#101216;--s2:#15171C;--line:#24272E;--tx:#F3F2EE;--mu:#9B9DA4;--ac:#D9FF62;
+--f:"Inter Tight",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--pad:clamp(1.25rem,4vw,3.5rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+body{background:var(--bg);color:var(--tx);font-family:var(--f);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.wrap{max-width:1440px;margin:0 auto;padding:0 var(--pad)}
+.lab{font-size:.78rem;color:var(--mu);letter-spacing:.02em}
+.ac{color:var(--ac)}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:10;background:rgba(9,10,13,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:3.5rem}
+nav b{font-weight:500;font-size:.85rem}
+nav ul{display:flex;gap:1.75rem;list-style:none}
+.ul{position:relative;font-size:.85rem;color:var(--mu);transition:color .25s}
+.ul::after{content:"";position:absolute;left:0;bottom:-3px;height:1px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.ul:hover{color:var(--tx)}.ul:hover::after{transform:scaleX(1)}
+
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:7rem 0 3rem;border-bottom:1px solid var(--line)}
+h1{font-weight:600;font-size:clamp(2.6rem,12.2vw,10.5rem);line-height:.86;letter-spacing:-.05em}
+h1 span{display:block}
+.hero .role{margin-top:clamp(2rem,5vw,4rem);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.25rem 3rem;border-top:1px solid var(--line);padding-top:1.5rem}
+.role p:first-child{font-size:clamp(1.1rem,2.2vw,1.6rem);font-weight:500;letter-spacing:-.02em}
+.role div:last-child{text-align:right}
+.hero h1,.hero .role{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.hero .role{animation-delay:.25s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+
+/* sections */
+section{padding:clamp(4rem,9vw,8rem) 0}
+.sh{display:flex;align-items:baseline;gap:1.25rem;margin-bottom:clamp(2rem,4vw,3.5rem)}
+.sh h2{font-weight:600;font-size:clamp(1.8rem,4.5vw,3.6rem);letter-spacing:-.04em;line-height:1}
+.sh .lab{margin-left:auto}
+.cat{border-top:1px solid var(--line);padding-top:1.5rem;margin-bottom:clamp(4rem,8vw,7rem)}
+.cat>header{display:flex;align-items:baseline;gap:1rem;margin-bottom:2rem}
+.cat h3{font-weight:500;font-size:clamp(1.3rem,2.6vw,2rem);letter-spacing:-.03em}
+.cat header .lab{margin-left:auto}
+
+.v{position:relative;aspect-ratio:16/9;background:var(--s1);border:1px solid var(--line);transition:border-color .3s,transform .4s}
+.v.p{aspect-ratio:9/16}
+.v:hover{border-color:var(--ac);transform:scale(1.008)}
+a.v{display:block;overflow:hidden}
+.v img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.v::after{content:"";position:absolute;inset:0;background:rgba(9,10,13,.28);transition:background .3s}
+.v:hover::after{background:rgba(9,10,13,.1)}
+.play{position:absolute;z-index:1;left:50%;top:50%;width:4.25rem;height:4.25rem;margin:-2.125rem 0 0 -2.125rem;border:1px solid var(--tx);border-radius:50%;background:rgba(9,10,13,.55);transition:border-color .3s,background .3s}
+.play::before{content:"";position:absolute;left:50%;top:50%;width:1.1rem;height:1.25rem;margin:-.625rem 0 0 -.4rem;background:var(--tx);clip-path:polygon(0 0,100% 50%,0 100%);transition:background .3s}
+.v:hover .play,.v:focus-visible .play{border-color:var(--ac)}
+.v:hover .play::before,.v:focus-visible .play::before{background:var(--ac)}
+.yt{display:inline-block;margin-top:.5rem;font-size:.78rem}
+.cap{display:flex;gap:.9rem;align-items:baseline;margin-top:1rem}
+.cap .n{font-size:.78rem;color:var(--ac);min-width:1.6rem}
+.cap h4{font-weight:500;font-size:1.1rem;letter-spacing:-.015em;line-height:1.3}
+.cap .lab{display:block;margin-top:.15rem}
+[lang=ar]{direction:rtl;unicode-bidi:isolate;display:inline-block;font-size:1.25em}
+
+/* broadcast */
+.bc{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1.25rem,2.5vw,2.5rem)}
+.bc>.a{grid-column:1/9}
+.bc>.a+.cap-side{grid-column:9/13;align-self:end}
+.bc>.b{grid-column:span 6}
+.cap-side h4{font-weight:600;font-size:clamp(1.5rem,2.6vw,2.3rem);letter-spacing:-.03em;line-height:1.2;margin:.5rem 0}
+/* events */
+.ev{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.25rem,3vw,3rem)}
+.ev>div:last-child{margin-top:clamp(2rem,8vw,7rem)}
+/* social */
+.so{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,3vw,3rem);align-items:start}
+.so>div:nth-child(2){margin-top:clamp(1.5rem,5vw,4.5rem)}
+/* motion */
+.mo>div{display:grid;grid-template-columns:4fr 8fr;gap:clamp(1.25rem,3vw,3rem);align-items:end;padding:2rem 0;border-top:1px solid var(--line)}
+.mo>div:first-child{border-top:0;padding-top:0}
+.mo h4{font-weight:600;font-size:clamp(1.4rem,2.6vw,2.2rem);letter-spacing:-.03em;line-height:1.15;margin:.5rem 0 .25rem}
+
+/* photos */
+.ph{display:grid;grid-template-columns:7fr 5fr;gap:clamp(.75rem,1.6vw,1.5rem)}
+.ph figure{overflow:hidden;background:var(--s1);border:1px solid var(--line)}
+.ph{align-items:start}
+.ph figure{transition:border-color .3s}
+.ph figure:hover{border-color:var(--ac)}
+.ph img{width:100%;height:auto;object-fit:contain;display:block}
+.ph .t.lo{margin-top:clamp(1rem,6vw,6rem)}
+.ph figure:nth-child(3){grid-column:1;grid-row:2}
+.ph figure:nth-child(2){grid-column:2;grid-row:1}
+.ph figure:nth-child(3).t{margin-top:0}
+.ph figure:nth-child(4){grid-column:2;grid-row:2}
+.ph figure:nth-child(5){grid-column:1;grid-row:3}
+
+/* experience */
+.ex>div{display:grid;grid-template-columns:4fr 8fr;gap:1rem 3rem;padding:1.75rem 0;border-top:1px solid var(--line)}
+.ex>div:last-child{border-bottom:1px solid var(--line)}
+.ex h3{font-weight:500;font-size:clamp(1.15rem,2vw,1.5rem);letter-spacing:-.02em;line-height:1.25}
+.ex p{color:var(--mu);max-width:62ch}
+.ex .d{font-size:.85rem;color:var(--ac);margin-top:.25rem}
+
+/* skills */
+.sk{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem)}
+.sk h3{font-weight:500;font-size:.85rem;color:var(--mu);margin-bottom:1.25rem;font-size:.78rem}
+.sk ul{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem}
+.sk li{border:1px solid var(--line);padding:.45rem .9rem;font-size:.95rem;transition:border-color .3s,color .3s}
+.sk li:hover{border-color:var(--ac)}
+.sw{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.sw li{list-style:none;border:1px solid var(--line);padding:1rem 1.1rem;font-size:.95rem;background:var(--s1);transition:border-color .3s}
+.sw li:hover{border-color:var(--ac)}
+.sw .k{grid-column:span 1;background:var(--s2);border-color:#3a3f48;font-size:1.25rem;font-weight:500;letter-spacing:-.02em;padding:2rem 1.1rem}
+.sw .k small{display:block;font-size:.78rem;color:var(--ac);font-weight:400;letter-spacing:0;margin-top:.3rem}
+.sw ul{display:contents}
+
+/* contact */
+.ct{border-top:1px solid var(--line)}
+.ct .big{display:inline-block;font-weight:600;font-size:clamp(1.5rem,5.6vw,4.6rem);letter-spacing:-.045em;line-height:1.05;margin:1.5rem 0 2.5rem;overflow-wrap:anywhere}
+.ct .big .ul-in{background:linear-gradient(var(--ac),var(--ac)) 0 100%/0 2px no-repeat;transition:background-size .4s}
+.ct .big:hover .ul-in{background-size:100% 2px}
+.ct .row{display:flex;flex-wrap:wrap;gap:1.25rem 3.5rem;align-items:center;justify-content:space-between}
+.ct .info{display:flex;flex-wrap:wrap;gap:.5rem 3rem}
+.ct .info span,.ct .info a{display:block}
+.btn{display:inline-block;border:1px solid var(--ac);color:var(--ac);padding:.85rem 1.6rem;font-weight:500;transition:background .3s,color .3s}
+.btn:hover{background:var(--ac);color:var(--bg)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+ .bc>.a,.bc>.a+.cap-side,.bc>.b{grid-column:1/-1}
+ .bc>.b{grid-column:span 6}
+ .ev>div:last-child{margin-top:0}
+ .mo>div,.ex>div{grid-template-columns:1fr}
+ .sk{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+ nav ul{gap:1.1rem}nav li:nth-child(2),nav li:nth-child(4){display:none}
+ .bc>.b,.ev{grid-template-columns:1fr;grid-column:1/-1}
+ .so{grid-template-columns:1fr;max-width:320px;margin:0 auto;gap:2.5rem}
+ .so>div:nth-child(2){margin-top:0}
+ .ph{grid-template-columns:1fr}
+ .ph figure{grid-column:1!important;grid-row:auto!important;margin-top:0!important}
+ .role div:last-child{text-align:left}
+ .sh .lab,.cat header .lab{display:none}
+ .sw{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *{animation:none!important;transition:none!important}
+ .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="wrap">
+  <b>Hamza Ould Damba Korka</b>
+  <ul>
+   <li><a class="ul" href="#work">Work</a></li>
+   <li><a class="ul" href="#behind">Behind the Camera</a></li>
+   <li><a class="ul" href="#experience">Experience</a></li>
+   <li><a class="ul" href="#skills">Skills</a></li>
+   <li><a class="ul" href="#contact">Contact</a></li>
+  </ul>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="wrap">
+  <h1><span>HAMZA OULD</span><span>DAMBA KORKA</span></h1>
+  <div class="role">
+   <div>
+    <p>Cinematographer · Video Editor · Colorist</p>
+    <p class="lab" style="margin-top:.4rem">Broadcast · Commercial · Social Media · Events · Motion</p>
+   </div>
+   <div><p class="lab">Location</p><p>Morocco</p></div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section id="work">
+ <div class="wrap">
+  <div class="sh"><h2>Selected Work</h2><span class="lab">10 videos</span></div>
+
+  <!-- 01 BROADCAST / PODCAST -->
+  <div class="cat rv">
+   <header><span class="ac lab">01</span><h3>Broadcast / Podcast</h3><span class="lab">3 projects</span></header>
+   <div class="bc">
+    <div class="a">
+     <a class="v" href="https://www.youtube.com/watch?v=Q4atlfVgslM&amp;list=PLY1TAsCl8kBWAfpXt_JOIZmsEoVMeU584&amp;index=26" target="_blank" rel="noopener noreferrer" aria-label="Play نسمات أخوية on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/Q4atlfVgslM/maxresdefault.jpg" data-id="Q4atlfVgslM" alt="نسمات أخوية" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+    </div>
+    <div class="cap-side">
+     <span class="ac lab">01</span>
+     <h4><span lang="ar">نسمات أخوية</span></h4>
+     <span class="lab">Broadcast / Multi-Camera</span><br><a class="yt ul" href="https://www.youtube.com/watch?v=Q4atlfVgslM&amp;list=PLY1TAsCl8kBWAfpXt_JOIZmsEoVMeU584&amp;index=26" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+    <div class="b">
+     <a class="v" href="https://www.youtube.com/watch?v=ry7d-tHy_wk" target="_blank" rel="noopener noreferrer" aria-label="Play ملفات وآراء on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/ry7d-tHy_wk/maxresdefault.jpg" data-id="ry7d-tHy_wk" alt="ملفات وآراء" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+     <div class="cap"><span class="n">02</span><div><h4><span lang="ar">ملفات وآراء</span></h4><span class="lab">Broadcast</span><br><a class="yt ul" href="https://www.youtube.com/watch?v=ry7d-tHy_wk" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
+    </div>
+    <div class="b">
+     <a class="v" href="https://www.youtube.com/watch?v=qaQQOia6GTg" target="_blank" rel="noopener noreferrer" aria-label="Play بودكاست إرشاد on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/qaQQOia6GTg/maxresdefault.jpg" data-id="qaQQOia6GTg" alt="بودكاست إرشاد" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+     <div class="cap"><span class="n">03</span><div><h4><span lang="ar">بودكاست إرشاد</span></h4><span class="lab">Podcast</span><br><a class="yt ul" href="https://www.youtube.com/watch?v=qaQQOia6GTg" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
+    </div>
+   </div>
+  </div>
+
+  <!-- 02 EVENTS -->
+  <div class="cat rv">
+   <header><span class="ac lab">02</span><h3>Events</h3><span class="lab">2 projects</span></header>
+   <div class="ev">
+    <div>
+     <a class="v" href="https://www.youtube.com/watch?v=0OKq4VaOiAw" target="_blank" rel="noopener noreferrer" aria-label="Play Festival des Plages on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/0OKq4VaOiAw/maxresdefault.jpg" data-id="0OKq4VaOiAw" alt="Festival des Plages" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+     <div class="cap"><span class="n">01</span><div><h4>Festival des Plages</h4><span class="lab">Event</span><br><a class="yt ul" href="https://www.youtube.com/watch?v=0OKq4VaOiAw" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
+    </div>
+    <div>
+     <a class="v" href="https://youtu.be/qneaQOWD5LQ" target="_blank" rel="noopener noreferrer" aria-label="Play Event 02 on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/qneaQOWD5LQ/maxresdefault.jpg" data-id="qneaQOWD5LQ" alt="Event 02" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+     <div class="cap"><span class="n">02</span><div><h4>Event 02</h4><span class="lab">Event</span><br><a class="yt ul" href="https://youtu.be/qneaQOWD5LQ" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
+    </div>
+   </div>
+  </div>
+
+  <!-- 03 SOCIAL MEDIA -->
+  <div class="cat rv">
+   <header><span class="ac lab">03</span><h3>Social Media</h3><span class="lab">3 vertical projects · 9:16</span></header>
+   <div class="so">
+    <div>
+     <a class="v p" href="https://youtube.com/shorts/sDIuRP_SH1U" target="_blank" rel="noopener noreferrer" aria-label="Play Social Media Commercial 01 on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/sDIuRP_SH1U/maxresdefault.jpg" data-id="sDIuRP_SH1U" alt="Social Media Commercial 01" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+     <div class="cap"><span class="n">01</span><div><h4>Social Media Commercial 01</h4><a class="yt ul" href="https://youtube.com/shorts/sDIuRP_SH1U" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
+    </div>
+    <div>
+     <a class="v p" href="https://youtube.com/shorts/HpBNntJQ54Q" target="_blank" rel="noopener noreferrer" aria-label="Play Social Media Commercial 02 on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/HpBNntJQ54Q/maxresdefault.jpg" data-id="HpBNntJQ54Q" alt="Social Media Commercial 02" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+     <div class="cap"><span class="n">02</span><div><h4>Social Media Commercial 02</h4><a class="yt ul" href="https://youtube.com/shorts/HpBNntJQ54Q" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
+    </div>
+    <div>
+     <a class="v p" href="https://youtube.com/shorts/g_X8Tc6Vxbs" target="_blank" rel="noopener noreferrer" aria-label="Play Social Media Commercial 03 on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/g_X8Tc6Vxbs/maxresdefault.jpg" data-id="g_X8Tc6Vxbs" alt="Social Media Commercial 03" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+     <div class="cap"><span class="n">03</span><div><h4>Social Media Commercial 03</h4><a class="yt ul" href="https://youtube.com/shorts/g_X8Tc6Vxbs" target="_blank" rel="noopener">Watch on YouTube ↗</a></div></div>
+    </div>
+   </div>
+  </div>
+
+  <!-- 04 MOTION DESIGN -->
+  <div class="cat rv" style="margin-bottom:0">
+   <header><span class="ac lab">04</span><h3>Motion Design</h3><span class="lab">2 projects</span></header>
+   <div class="mo">
+    <div>
+     <div><span class="ac lab">01</span><h4>Intro identité presse</h4><span class="lab">Motion Design / Brand Identity</span><br><a class="yt ul" href="https://youtu.be/rXjLwIekfuw" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+     <a class="v" href="https://youtu.be/rXjLwIekfuw" target="_blank" rel="noopener noreferrer" aria-label="Play Intro identité presse on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/rXjLwIekfuw/maxresdefault.jpg" data-id="rXjLwIekfuw" alt="Intro identité presse" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+    </div>
+    <div>
+     <div><span class="ac lab">02</span><h4>Animation identité presse</h4><span class="lab">Motion Design / Brand Animation</span><br><a class="yt ul" href="https://youtu.be/FzjcjM_7fnM" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+     <a class="v" href="https://youtu.be/FzjcjM_7fnM" target="_blank" rel="noopener noreferrer" aria-label="Play Animation identité presse on YouTube (opens in a new tab)"><img src="https://img.youtube.com/vi/FzjcjM_7fnM/maxresdefault.jpg" data-id="FzjcjM_7fnM" alt="Animation identité presse" loading="lazy"><span class="play" aria-hidden="true"></span></a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="behind" style="padding-top:0">
+ <div class="wrap">
+  <div class="sh"><h2>Behind the Camera</h2></div>
+  <div class="ph rv">
+   <figure class="w"><img src="https://res.cloudinary.com/reyywaep/image/upload/f_auto,q_auto/v1791128374/DSC00253.jpg" alt="Behind the camera, photo 01" loading="lazy"></figure>
+   <figure class="t"><img src="https://res.cloudinary.com/reyywaep/image/upload/f_auto,q_auto/v1791128374/DSC00111.jpg" alt="Behind the camera, photo 02" loading="lazy"></figure>
+   <figure class="t"><img src="https://res.cloudinary.com/reyywaep/image/upload/f_auto,q_auto/v1791128374/DSC00244.jpg" alt="Behind the camera, photo 03" loading="lazy"></figure>
+   <figure class="w"><img src="https://res.cloudinary.com/reyywaep/image/upload/f_auto,q_auto/v1791128374/DSC00132.jpg" alt="Behind the camera, photo 04" loading="lazy"></figure>
+   <figure class="w"><img src="https://res.cloudinary.com/reyywaep/image/upload/v1791128327/1.jpg" alt="Behind the camera, photo 05" loading="lazy"></figure>
+  </div>
+ </div>
+</section>
+
+<section id="profile" style="padding-top:0">
+ <div class="wrap rv">
+  <p style="font-size:clamp(1.4rem,3.2vw,2.6rem);font-weight:500;letter-spacing:-.035em;line-height:1.2;max-width:28em;border-top:1px solid var(--line);padding-top:clamp(2rem,5vw,4rem)">Audiovisual professional with experience across broadcast, commercial, social media and event production, with a focus on cinematography, video editing and color grading.</p>
+ </div>
+</section>
+
+<section id="experience" style="padding-top:0">
+ <div class="wrap">
+  <div class="sh"><h2>Experience</h2></div>
+  <div class="ex rv">
+   <div>
+    <div><h3>Freelance — Audiovisual Production</h3><p class="d">2025 — Present · Morocco</p></div>
+    <p>Audiovisual production, camera operation, framing, filming, interviews, reports, events and collaboration with production teams.</p>
+   </div>
+   <div>
+    <div><h3>Hespress — Camera Operator</h3><p class="d">2024 · Morocco</p></div>
+    <p>Camera operation and framing for media content.</p>
+   </div>
+   <div>
+    <div><h3>Boldmars — Videographer</h3><p class="d">2023 — 2024 · Morocco</p></div>
+    <p>Video shooting and audiovisual content production.</p>
+   </div>
+   <div>
+    <div><h3>Kashif Media — Videographer</h3><p class="d">2019 — 2022 · Morocco</p></div>
+    <p>Video production for programs, seminars and events, including work connected to Howiya Press / Al-Ons Television Channel.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="skills" style="padding-top:0">
+ <div class="wrap">
+  <div class="sh"><h2>Skills &amp; Software</h2></div>
+  <div class="sk rv">
+   <div>
+    <h3>Skills</h3>
+    <ul>
+     <li>Cinematography</li><li>Camera Operation</li><li>Framing</li><li>Video Editing</li><li>Color Grading</li><li>Broadcast Production</li><li>Multi-Camera Production</li><li>Interviews</li><li>Reportage</li><li>Event Production</li><li>Production / Set Work</li><li>Motion Design</li><li>Photography</li>
+    </ul>
+   </div>
+   <div>
+    <h3>Software</h3>
+    <div class="sw">
+     <li class="k">Adobe Premiere Pro<small>Editing</small></li>
+     <li class="k">DaVinci Resolve<small>Color Grading</small></li>
+     <ul>
+      <li>Adobe After Effects</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Adobe Audition</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+ <div class="wrap">
+  <div class="ct rv" style="padding-top:clamp(2rem,5vw,4rem)">
+   <span class="lab">Contact</span><br>
+   <a class="big" href="mailto:dambakorkawork@gmail.com"><span class="ul-in">dambakorkawork@gmail.com</span></a>
+   <div class="row">
+    <div class="info">
+     <a class="ul" href="tel:+212623983571" style="color:var(--tx)">+212 623 983 571</a>
+     <a class="ul" href="tel:+212633335186" style="color:var(--tx)">+212 633 335 186</a>
+     <span>Morocco</span>
+    </div>
+    <a class="btn" href="mailto:dambakorkawork@gmail.com">Get in touch ↗</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<script>
+(function(){
+ var els=document.querySelectorAll('.rv');
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+ els.forEach(function(e){io.observe(e)});
+})();
+
+(function(){
+ document.querySelectorAll('.v img').forEach(function(im){
+  var hq='https://img.youtube.com/vi/'+im.getAttribute('data-id')+'/hqdefault.jpg';
+  function fb(){if(im.src!==hq)im.src=hq}
+  im.addEventListener('error',fb);
+  im.addEventListener('load',function(){if(im.naturalWidth<=120)fb()});
+  if(im.complete&&im.naturalWidth<=120)fb();
+ });
+})();
+</script>
+</body>
+</html>
